@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="AI Camp Green Titans Batch B 2022" />
+        <title>Predict Stroke with AI Model</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/page-styles.css" rel="stylesheet" />
+        <script src="js/scripts.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Stroke Prediction</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                           <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+                          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Table Of Contents
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#machinelearning">Machine Learning</a></li>
+             <li><a class="dropdown-item" href="#visualizations">Visualizations</a></li>
+            <li><a class="dropdown-item" href="#conclusion">Conclusion</a></li>
+             <li><a class="dropdown-item" href="our-team">Meet The Team</a></li>
+
+            
+          </ul>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Stroke Prediction</h1>
+                <p class="lead"></p>
+                <a class="btn btn-lg btn-light" href="#about">Get Started!</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <style type="text/css">
+                            tab1 {
+                                padding-left: 4em;
+                            }
+                        </style>
+                        <h2 style = "text-align: center;">
+                            <em>Every <font color="#DE3163">4 minutes</font>, someone dies from a stroke.</em>
+                        </h2>
+                        <! --https://www.utmbhealth.com/services/neurology/procedures-conditions/stroke/stroke-facts -->
+                       <div class = 'row'>
+                        <img src="assets/img/sunset.jpg" alt="Sunset" width='550px' height='550px' id = "hp"/>
+                      </div>
+                      <br>
+                            <p class="lead">
+                                <tab1> However, what if we were to inform you that <b>80%</b> of strokes are <b>preventable</b>? That's right, you can reduce your own risk of a stroke if you catch it early enough.</tab1> <br />
+                                <tab1>
+                                    Well, how can we do this? After all, for the vast majority of us it is simply impractical to go to the doctor every time we begin to worry about our chances of getting a stroke, and Google doesn't always
+                                    give accurate information.
+                                </tab1>
+                                <br />
+                                <tab1> Well, worry no more. It was for this exact problem that we created our project, a revolutionary site that can predict the probability of you having a stroke based on only: </tab1>
+                            </p>
+                            <ul>
+                                <li>Age</li>
+                                <li>Sex</li>
+                                <li>Weight</li>
+                                <li>And a few more basic details!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Machine Learning section-->
+        <section id="machinelearning" class="bg-light px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Machine Learning and Models</h2>
+                    <p class="lead">
+                      Before beginning to code, we needed to pick a reliable dataset; hence, we turned to <a href="https://kaggle.com" class="link_link"><strong>Kaggle</strong></a>, an online database with millions of open source datasets. <br>
+              With the dataset selected, we moved on to the machine learning, developing a wide variety of predictive models to ensure that we could bring you the highest accuracy possible. These models were <a href="https://xgboost.readthedocs.io/en/stable/" class="link_link"><strong>XGBoost</strong></a>, <a href="https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe" class="link_link"><strong>AdaBoost</strong></a>, <a href="https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47" class="link_link"><strong>SVM</strong></a>, <a href="https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761" class="link_link"><strong>KNN</strong></a>, <a href="https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414" class="link_link"><strong>Neural Networks</strong></a>, <strong><a href = "https://towardsdatascience.com/understanding-random-forest-58381e0602d2" class="link_link">Random Forest</a></strong>,<a href="https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc" class="link_link"><strong>Logistic Regression</strong></a>, and <a href="https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052" class="link_link"><strong>Decision Tree Classifier</strong></a>. Feel free to explore the details of every model we used below! </p><br/><br/>
+                </div>
+              <div>
+<img src="https://www.tibco.com/sites/tibco/files/styles/banner_large/public/banner_images/main_41.jpg?itok=CYk8DVW3" height = 100px, width = 100%>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+                        <br>
+                <br>
+                  <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">KNN</h5>
+              <p class="card-text">k-NN is a type of classification where the function is only approximated locally and all computation is deferred until function evaluation</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#knn">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SVM</h5>
+              <p class="card-text">Support Vector Machine(SVM) is a supervised machine learning algorithm for classification and regression by finding a hyperplane.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#svm"> Learn
+                More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Logistic Regression</h5>
+                <p class="card-text">Logistic regression predicts a dependent data variable by analyzing the relationship between one or more existing independent variables.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#logisticregression">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">XGBoost</h5>
+                <p class="card-text">XGBoost is a gradient boosting algorithm that uses decision trees as its “weak” predictors. <br></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xgboost"> Learn
+                  More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <br>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">AdaBoost</h5>
+                  <p class="card-text">AdaBoost is an ensemble learning method created to boost other algorithms by using an iterative approach to learn from the mistakes of weak classifiers.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adaboost">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Decision Tree</h5>
+                  <p class="card-text">Decision Tree is a type of supervised machine learning used to categorize or make predictions based on how a previous set of questions were answered.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#decisiontree"> Learn
+                    More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+              <br>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Random Forest</h5>
+                    <p class="card-text">Random Forest consists of many decision trees and utilizes ensemble learning to solve classification and regression problems.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#randomforest">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+          <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Neural Networks</h5>
+                    <p class="card-text">Neural Networks is a type of deep learning that uses interconnected nodes or neurons in a layered structure that resembles the human brain.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#neuralnetworks">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <br>
+              <!-- Modals For Machine Learning -->
+              <div class="modal fade" id="knn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">KNN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        KNN Body
+      </div>
+        <iframe src = "">
+          
+      </iframe>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              <div class="modal fade" id="svm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SVM</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Support Vector Machines (SVM) is a core algorithm used by data scientists. It can be applied for both regression and classification problems but is most commonly used for classification. Its popularity stems from the strong accuracy and computation speed (depending on size of data) of the model. Due to the fact that SVM operates through kernels, it is excellent at solving nonlinear problems as well. The premise behind how SVM works is quite simple: given data plotted on a plane, this algorithm would create a line / hyperplane to separate the data into different classes.<br> <br>
+        
+        <strong>Pros</strong>
+         <ul>
+           <li>Fast algorithm.
+</li>
+           <li>Effective in high dimensional spaces.
+</li>
+           <li>Great accuracy.</li>
+           <li>Power and flexibility from kernels.
+</li>
+           <li>Works very well with a clear margin of separation.
+</li>
+           <li>Many applications.
+</li>
+        </ul>
+           <br> <br>
+           
+           <strong>Cons</strong>
+           <ul>
+             <li>Doesn’t perform well with large data sets.
+</li>
+             <li>Not so simple to program. </li>
+             <li>Doesn’t perform so well, when the data comes with more noise i.e. target classes are overlapping.
+</li>
+        </ul>
+          <iframe src="./assets/static/Confusion_matrix_SVM.html" width='500px' height='500px' title="SVM Confusion Matrix"></iframe>
+        <br> <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                <!-- Modals For Machine Learning -->
+              <div class="modal fade" id="logisticregression" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Logistic Regression</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        LG Body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              <div class="modal fade" id="xgboost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">XGBoost</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        XGBoost Body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                <!-- Modals For Machine Learning -->
+              <div class="modal fade" id="decisiontree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Decision Tree</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Decision Tree Body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              <div class="modal fade" id="adaboost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="https://blog.paperspace.com/adaboost-optimizer/" class="link_link"><h5 class="modal-title" id="exampleModalLabel">AdaBoost</h5></a>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        AdaBoost Optimizer is an ensemble learning method (also known as “meta-learning”) which was initially created to increase the efficiency of binary classifiers. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones. <br/>We used AdaBoost as an optimizer for Decision Tree Classifier (using it as the base estimator). The <a href="https://en.wikipedia.org/wiki/Mean_squared_error" class="link_link">Mean Squared Error (MSE)</a> decreased from 0.04 to 0.03 after AdaBoost is utilized on top of Decision Tree Classifer (<a href="https://towardsdatascience.com/how-to-tune-a-decision-tree-f03721801680" class="link_link">max depth</a> = 6). Thus the accuracy increase from about 96% to 97.3%(±0.4%), a significant increase.<br/><br/>
+        <iframe src="./assets/static/Confusion_matrix_Adaboost.html" width='500px' height='500px' title="AdaBoost Confusion Matrix"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                <!-- Modals For Machine Learning -->
+              <div class="modal fade " id="randomforest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Random Forest</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Random Forest Body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              <div class="modal fade" id="neuralnetworks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Neural Networks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Neural Networks Body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              
+              <!-- Here -->
+            </div>
+        </section>
+        <section class="container px-4" id="conclusion">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Visualizations</h2>
+                        <!-- Tab links -->
+                       
+                      
+                      
+                          <div class="row">
+                            <iframe src="assets/static/pie.html" width='550px' height='550px'  title="Pie Chart"></iframe>
+                            <iframe src="assets/static/scat.html" width='800px' height='550px' title="Scatter Plot"></iframe>
+                          </div>
+                          <div class="row">
+                            <iframe src="assets/static/md.html" width='800px' height='550px'  title="MD Chart"></iframe>
+                            <iframe src="assets/static/smokeh.html" width='550px' height='550px' title="Smoking Status"></iframe>
+                          </div>
+
+                        
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Conclusion section-->
+        <section class="bg-light" id="conclusion">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Conclusion</h2>
+                      <p class="lead"><tab1> Through our hard work we learned valuable information about the likelihood of strokes. This was accomplished through the use of charts, plots, and predictive models (all of which employ supervised learning). Everything you see today was learned and created during the 3 weeks we spent at AI Camp, where we mastered  the programming language Python. Our final model has an accuracy percentage of around 97% <!-- change later when we get the exact value!!-->, making it more than just trustworthy - it's one of the most accurate predictors out there. </tab1></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-team">
+            <div class="container px-4">
+                <p class="header">
+                    Meet The Team
+                </p>
+
+                <hr />
+                <div class="team">
+                    <div class="row cards align-items-center text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/YLGBEk.jpg" class="card-img-top" alt="" />
+                            <div class="card-body">
+                                <h5 class="card-title">Shawn Engmann</h5>
+                                <p class="card-text">Hello, I'm Shawn if you would loke to read more about me click the button below...</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-1">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/vfbkKP.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Jeongwoo Cheong</h5>
+                                <p class="card-text">Hello, I'm Jeongwoo Cheon if you would like to read more about me click the button below...</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-2">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/vfbkKP.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Jeremy Xiang</h5>
+                                <p class="card-text">Jeremy Xiang</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-3">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row cards align-items-center text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/vfbkKP.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Dami Alabi</h5>
+                                <p class="card-text">Dami Alabi</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-4">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/vfbkKP.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Dylan Garcia</h5>
+                                <p class="card-text">Hi, I'm Dylan, and if you would like to learn more about to me, click the button below</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-5">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.shawnengmann.com/shawn/vfbkKP.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Sofia Behzadi</h5>
+                                <p class="card-text">Bonjour! Je m'appelle Sofia, et si vouz voulez apprendre plus de moi, cliquer sur ce bouton</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-6">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <br />
+                    <div class="row cards align-items-center text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://www.cworldteenager.org/uploads/1/3/9/6/139665432/published/wechatimg152.jpeg?1656002217" class="card-img-top circle" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Hongming(Alan) Mao</h5>
+                                <p class="card-text">Click below to learn more about me!!!!!!!!!!!!!!</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-7">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                      <div class="card" style="width: 18rem;">
+                            <img src="ritum_singh.jpeg" alt="Ritum Singh" class='circle' width="200" 
+     height="200"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Ritum Singh</h5>
+                                <p class="card-text">Click below to learn more about me</p>
+                                <button type="button" class="btn btn-success margin-auto" data-bs-toggle="modal" data-bs-target="#mem-8">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                      <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="mem-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Shawn Engmann</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Hello, I'm Shawn Engmann I live on Long Island, New York. I am 14 years old and run a mini for my enjoyment. I know many programming languages they are listed below. I also know how to speak <strong>French</strong> a little bit. I have worked on many projects throughout time coding. I started my coding journey with a class by <a href='https://www.codewizardshq.com/' class="link_link">Code Wizards </a>. I have taken a few course with the including <strong>Intro To Programming With Python</strong>, <strong>Webpages with HTML & CSS</strong>, <strong>Interactive Web With Javascript</strong>, <strong>Capstone I Virtual Reality Game</strong>, <strong>User Interface Development</strong>. Throughout this time I took interest in Web Development and development of Discord bots with Discord.js. I hope to expand my knowledge of coding over the next few years. <br> <br>
+                          <strong> Known Coding Languages</strong>
+                          <ul>
+                            
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Aframe</li>
+                            <li>Python</li>
+                            <li>Discord.js</li>
+                            <li>Node.js Framework</li>
+                            <li><a href="https://ejs.co/" class="link_link">EJS (Embedded JavaScript)</a></li>
+                      </ul>
+                      
+                      If you would like to see projects i have developed you can head over to <a href='https://store.shawnengmann.com'>my website</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Jeongwoo Cheon</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Team Member 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Nunc eget
+                            lorem dolor sed viverra ipsum nunc aliquet bibendum. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Id eu nisl nunc mi ipsum faucibus vitae. Augue mauris augue neque gravida in fermentum et
+                            sollicitudin ac. Mauris commodo quis imperdiet massa tincidunt nunc. Varius duis at consectetur lorem donec massa. Nulla facilisi cras fermentum odio eu feugiat pretium. Porta nibh venenatis cras sed felis eget
+                            velit aliquet. Eget arcu dictum varius duis at consectetur lorem. Auctor urna nunc id cursus. Diam in arcu cursus euismod. Magna sit amet purus gravida quis blandit turpis cursus. Orci nulla pellentesque
+                            dignissim enim sit amet. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque elit eget gravida cum sociis natoque penatibus.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Team Member 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Nunc eget
+                            lorem dolor sed viverra ipsum nunc aliquet bibendum. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Id eu nisl nunc mi ipsum faucibus vitae. Augue mauris augue neque gravida in fermentum et
+                            sollicitudin ac. Mauris commodo quis imperdiet massa tincidunt nunc. Varius duis at consectetur lorem donec massa. Nulla facilisi cras fermentum odio eu feugiat pretium. Porta nibh venenatis cras sed felis eget
+                            velit aliquet. Eget arcu dictum varius duis at consectetur lorem. Auctor urna nunc id cursus. Diam in arcu cursus euismod. Magna sit amet purus gravida quis blandit turpis cursus. Orci nulla pellentesque
+                            dignissim enim sit amet. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque elit eget gravida cum sociis natoque penatibus.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Team Member 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Nunc eget
+                            lorem dolor sed viverra ipsum nunc aliquet bibendum. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Id eu nisl nunc mi ipsum faucibus vitae. Augue mauris augue neque gravida in fermentum et
+                            sollicitudin ac. Mauris commodo quis imperdiet massa tincidunt nunc. Varius duis at consectetur lorem donec massa. Nulla facilisi cras fermentum odio eu feugiat pretium. Porta nibh venenatis cras sed felis eget
+                            velit aliquet. Eget arcu dictum varius duis at consectetur lorem. Auctor urna nunc id cursus. Diam in arcu cursus euismod. Magna sit amet purus gravida quis blandit turpis cursus. Orci nulla pellentesque
+                            dignissim enim sit amet. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque elit eget gravida cum sociis natoque penatibus.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Team Member 6</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                          Hi!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Hongming (Alan) Mao</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                           "If you set the game up, I will plot and map."<br/><br/>Alan might be new to this but he has been really learning how to work with new concepts such as data analysis, data visualization, and exporting CSV files. Alan believes that sharing statistics and facts with people will encourage them to make more informed decisions. Analytics is by no means dry; in its most basic sense, a statistic can be an interesting fact.<br/><br/>Data analytics is the new bridge to the future.Join me on my journey to being the next Evan Candler! I am happy to talk about my data visualization projects and problems I study. <br/>
+                          <!--Ai generated bio-->
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mem-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About member 8</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Member 8
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      <div class="container px-4 text-center">
+                <a class="btn btn-lg btn-primary" href="#">Back To Top</a>
+            </div>
+      <br> <br>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; AI Camp Green Titans Batch B 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script>
+            function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </body>
+</html>
