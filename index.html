@@ -659,7 +659,17 @@
                       </p> -->
         </div>
       </div>
+      
       <div class="col-sm-6 text-center"> </div>
+      <div id="nocat" class="text-center">
+        <div class="text-center">
+          <br> <br>
+          <h2> Select A Model To Learn More About</h2>
+
+      
+         
+        </div>
+      </div>
         <div id="scatterPlot" class="text-center" style="display: none;">
           <div class="text-center">
             <h1> Scatter Plot</h1>
@@ -671,7 +681,7 @@
             <p style="font-weight: 700px;">This scattered plot shows that there is direct correlation of glucose level</p>
           </div>
         </div>
-        <div id="pieChart">
+        <div id="pieChart" class="text-center" style="display: none;"">
           <div class="text-center">
             <h1> Pie Chart</h1>
             <iframe src="assets/static/pie.html" width='900px' height='550px' style="align-items: center; text-align: center; margin: auto; " title="Pie Chart"></iframe>
@@ -1082,55 +1092,34 @@
   </script>
   <script>
 
-    const queryString = window.location.search;
-    console.log(queryString);
-    const urlParams = new URLSearchParams(queryString);
-    let page = urlParams.get('page')
-    console.log(page);
-    let pie, hist, threed, scat
+    
+    let pie, hist, threed, scat, nocat
     scatterPlot = document.getElementById("scatterPlot");
     pieChart = document.getElementById("pieChart");
     histogram = document.getElementById("histogram");
     threed = document.getElementById("threed");
-    if (urlParams.has('page')) {
-      if (page === "scatterPlot") {
-        scatterPlot.style.display = "block";
-        pieChart.style.display = "none";
-        histogram.style.display = "none";
-        threed.style.display = "none";
-      } else if (page === "pieChart") {
-        scatterPlot.style.display = "none";
-        pieChart.style.display = "block";
-        histogram.style.display = "none";
-        threed.style.display = "none";
-      } else if (page === "histogram") {
-        scatterPlot.style.display = "none";
-        pieChart.style.display = "none";
-        histogram.style.display = "block";
-        threed.style.display = "none";
-      } else if (page === "threed") {
-        scatterPlot.style.display = "none";
-        pieChart.style.display = "none";
-        histogram.style.display = "none";
-        threed.style.display = "block";
-      }
-    }
+    nocat = document.getElementById("nocat");
+    
     async function changePage(page) {
       if (page === "scatterPlot") {
+        nocat.style.display = "none";
         scatterPlot.style.display = "block";
         pieChart.style.display = "none";
         histogram.style.display = "none";
         threed.style.display = "none";
       } else if (page === "pieChart") {
+        nocat.style.display = "none";
         scatterPlot.style.display = "none";
         pieChart.style.display = "block";
         histogram.style.display = "none";
         threed.style.display = "none";
       } else if (page === "histogram") {
+        nocat.style.display = "none";
         scatterPlot.style.display = "none";
         pieChart.style.display = "none";
         histogram.style.display = "block";
         threed.style.display = "none";
+        nocat.style.display = "none";
       } else if (page === "threed") {
         scatterPlot.style.display = "none";
         pieChart.style.display = "none";
