@@ -87,6 +87,132 @@
                     </div>
                </div>
           </section>
+                    <section class="container" id="visual">
+               <div class="container">
+                    <div class="row justify-content-center">
+                         <div class="col-sm-3 text-center">
+                              <h2>Visualizations</h2>
+                              <!-- Tab links -->
+                           <br/>
+                           <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Select A Visualization
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><p><button class="dropdown-item" onclick="changePage('scatterPlot')">Scatter Plot</button></p></li>
+    <li><p><button class="dropdown-item" onclick="changePage('pieChart')">Pie Chart</button></p></li>
+    <li> <p><button class="dropdown-item" onclick="changePage('histogram')">Histogram</button></p></li>
+    <li><p><button class="dropdown-item" onclick="changePage('threed')">Multi Dimensional Plot</button></p></li>
+    <li> <p><button class="dropdown-item" onclick="changePage('scatMatrix')">Scatter Matrix</button></p></li>
+    <li> <p><button class="dropdown-item" onclick="changePage('closeAllPlots')">Close All Plots</button></p></li>
+  </ul>
+                             <br/>
+                             <br/>
+</div>
+<!--                               <div class="row text-center button-nav">
+                                   <div class="col-lg-8">
+                                        <p><button class="staffButtons" onclick="changePage('scatterPlot')">Scatter Plot</button></p>
+                                   </div>
+                                   <div class="col-lg-8">
+                                        <p><button class="staffButtons" onclick="changePage('pieChart')">Pie Chart</button></p>
+                                   </div>
+                                   <div class="col-lg-8">
+                                        <p><button class="staffButtons" onclick="changePage('histogram')">Histogram</button></p>
+                                   </div>
+                                   <div class="col-lg-8">
+                                        <p><button class="staffButtons" onclick="changePage('threed')">Multi Dimensional Plot</button></p>
+                                   </div>
+                                   <div class="col-lg-8">
+                                        <p><button class="staffButtons" onclick="changePage('scatMatrix')">Scatter Matrix</button></p>
+                                   </div>
+                              </div> -->
+                         </div>
+                    </div>
+
+                    <div class="col-sm-6 text-center"></div>
+                    <div id="nocat" class="text-center">
+                         <div class="text-center"
+                              <br />
+                              <br />
+                         </div>
+                    </div>
+                    <div id="scatterPlot" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1>Scatter Plot</h1>
+                              <iframe src="assets/static/scat.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">This scattered plot shows that there is direct correlation of glucose level</p>
+                         </div>
+                    </div>
+                    <div id="pieChart" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1>Pie Chart</h1>
+                              <iframe src="assets/static/pie.html" width="900px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">This pie chart shows the percentage of smokers in our dataset. Data shows that 30% of the people smokes or smokes before.</p>
+                         </div>
+                    </div>
+                    <div id="histogram" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1>Histogram</h1>
+                              <iframe src="assets/static/smokeh.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">The Histogram above compares the gender of the subject and their smoking status to their average glucose levels </p>
+                         </div>
+                    </div>
+                    <div id="histogram" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1>Histogram</h1>
+                              <iframe src="assets/static/smokeh.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">The Histogram above compares the gender of the subject and their smoking status to their average glucose levels</p>
+                         </div>
+                    </div>
+                    <div id="scatMatrix" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1>Scatter Matrix</h1>
+                              <iframe src="assets/static/smatrix.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Scatter Matrix"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">
+                                   This chart shows BMI, Age, and Average Glucose Level of each person in the data set. If the dot is yellow, they had a stroke. If the dot is blue, they didn’t. We discovered that the older you are, the more
+                                   likely you are to have a stroke. The higher your BMI or your Average Glucose Level is, the higher a person’s stroke risk is.
+                              </p>
+                         </div>
+                    </div>
+
+                    <div id="threed" class="text-center" style="display: none;">
+                         <div class="text-center">
+                              <h1><strong> Multi Dimensional Plot</strong></h1>
+                              <iframe src="assets/static/md.html" width="1000px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
+                              <br />
+                              <br />
+
+                              <p style="font-weight: 700px;">This multi-dimensional plot shows relationships of various factors of stroke and the chance of stroke happening. The graph shows that:</p>
+                              <ol style="font-weight: 700px;">
+                                   <li>Younger people typically have a lower glucose level</li>
+                                   <li>Higher glucose level, higher chance to get a stroke</li>
+                                   <li>Older, higher chance</li>
+                                   <li>Higher BMI, higher chance</li>
+
+                                   <li>Females typically have a lower glucose level</li>
+                                   <li>The older you are, the more likely you are to have a stroke.</li>
+                                   <li>The higher you average glucose level is, the higher the stroke risk becomes.</li>
+                                   <li>The higher your BMI is, the more likely you ate to have a stroke.</li>
+                              </ol>
+                         </div>
+                    </div>
+               </div>
+          </section>
 
           <!-- Machine Learning section-->
           <section id="machinelearning" class="bg-light px-4">
@@ -109,8 +235,7 @@
                            <br/>
                            <hr/>
 <br/>
-                      
-                      <style>
+                                            <style>
                       table, th, td {
   border: 1px solid black;
                         padding: 3px;
@@ -126,13 +251,13 @@
   <thead class="text-center" >
     <tr style="text-align: right;">
       <th></th>
-      <th>model_name</th>
-      <th>train_accuracy</th>
+      <th>Model Name</th>
+      <th>Train Accuracy</th>
       <th>test_accuracy</th>
-      <th>F1_score</th>
-      <th>precision</th>
-      <th>recall</th>
-      <th>False_Positive</th>
+      <th>F1 Score</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>False Negitive</th>
     </tr>
   </thead>
   <tbody>
@@ -226,6 +351,7 @@
                         <p><button class="btn btn-danger" onclick="chartVis('hideChart')"> Hide Chart </button></p>
                   
                       </div>
+
 
                          <br />
                          <br />
@@ -644,132 +770,7 @@
                     <!-- Here -->
                </div>
           </section>
-          <section class="container" id="visual">
-               <div class="container">
-                    <div class="row justify-content-center">
-                         <div class="col-sm-3 text-center">
-                              <h2>Visualizations</h2>
-                              <!-- Tab links -->
-                           <br/>
-                           <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Select A Visualization
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><p><button class="dropdown-item" onclick="changePage('scatterPlot')">Scatter Plot</button></p></li>
-    <li><p><button class="dropdown-item" onclick="changePage('pieChart')">Pie Chart</button></p></li>
-    <li> <p><button class="dropdown-item" onclick="changePage('histogram')">Histogram</button></p></li>
-    <li><p><button class="dropdown-item" onclick="changePage('threed')">Multi Dimensional Plot</button></p></li>
-    <li> <p><button class="dropdown-item" onclick="changePage('scatMatrix')">Scatter Matrix</button></p></li>
-    <li> <p><button class="dropdown-item" onclick="changePage('closeAllPlots')">Close All Plots</button></p></li>
-  </ul>
-                             <br/>
-                             <br/>
-</div>
-<!--                               <div class="row text-center button-nav">
-                                   <div class="col-lg-8">
-                                        <p><button class="staffButtons" onclick="changePage('scatterPlot')">Scatter Plot</button></p>
-                                   </div>
-                                   <div class="col-lg-8">
-                                        <p><button class="staffButtons" onclick="changePage('pieChart')">Pie Chart</button></p>
-                                   </div>
-                                   <div class="col-lg-8">
-                                        <p><button class="staffButtons" onclick="changePage('histogram')">Histogram</button></p>
-                                   </div>
-                                   <div class="col-lg-8">
-                                        <p><button class="staffButtons" onclick="changePage('threed')">Multi Dimensional Plot</button></p>
-                                   </div>
-                                   <div class="col-lg-8">
-                                        <p><button class="staffButtons" onclick="changePage('scatMatrix')">Scatter Matrix</button></p>
-                                   </div>
-                              </div> -->
-                         </div>
-                    </div>
 
-                    <div class="col-sm-6 text-center"></div>
-                    <div id="nocat" class="text-center">
-                         <div class="text-center"
-                              <br />
-                              <br />
-                         </div>
-                    </div>
-                    <div id="scatterPlot" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1>Scatter Plot</h1>
-                              <iframe src="assets/static/scat.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">This scattered plot shows that there is direct correlation of glucose level</p>
-                         </div>
-                    </div>
-                    <div id="pieChart" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1>Pie Chart</h1>
-                              <iframe src="assets/static/pie.html" width="900px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">This pie chart shows the percentage of smokers in our dataset. Data shows that 30% of the people smokes or smokes before.</p>
-                         </div>
-                    </div>
-                    <div id="histogram" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1>Histogram</h1>
-                              <iframe src="assets/static/smokeh.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">The Histogram above compares the gender of the subject and their smoking status to their average glucose levels </p>
-                         </div>
-                    </div>
-                    <div id="histogram" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1>Histogram</h1>
-                              <iframe src="assets/static/smokeh.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">The Histogram above compares the gender of the subject and their smoking status to their average glucose levels</p>
-                         </div>
-                    </div>
-                    <div id="scatMatrix" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1>Scatter Matrix</h1>
-                              <iframe src="assets/static/smatrix.html" width="800px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Scatter Matrix"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">
-                                   This chart shows BMI, Age, and Average Glucose Level of each person in the data set. If the dot is yellow, they had a stroke. If the dot is blue, they didn’t. We discovered that the older you are, the more
-                                   likely you are to have a stroke. The higher your BMI or your Average Glucose Level is, the higher a person’s stroke risk is.
-                              </p>
-                         </div>
-                    </div>
-
-                    <div id="threed" class="text-center" style="display: none;">
-                         <div class="text-center">
-                              <h1><strong> Multi Dimensional Plot</strong></h1>
-                              <iframe src="assets/static/md.html" width="1000px" height="550px" style="align-items: center; text-align: center; margin: auto;" title="Pie Chart"></iframe>
-                              <br />
-                              <br />
-
-                              <p style="font-weight: 700px;">This multi-dimensional plot shows relationships of various factors of stroke and the chance of stroke happening. The graph shows that:</p>
-                              <ol style="font-weight: 700px;">
-                                   <li>Younger people typically have a lower glucose level</li>
-                                   <li>Higher glucose level, higher chance to get a stroke</li>
-                                   <li>Older, higher chance</li>
-                                   <li>Higher BMI, higher chance</li>
-
-                                   <li>Females typically have a lower glucose level</li>
-                                   <li>The older you are, the more likely you are to have a stroke.</li>
-                                   <li>The higher you average glucose level is, the higher the stroke risk becomes.</li>
-                                   <li>The higher your BMI is, the more likely you ate to have a stroke.</li>
-                              </ol>
-                         </div>
-                    </div>
-               </div>
-          </section>
 
           <!-- Conclusion section-->
           <section class="bg-light" id="conclusion">
@@ -789,6 +790,7 @@
                     </div>
                </div>
           </section>
+     
 
           <!-- Conclusion -->
 
